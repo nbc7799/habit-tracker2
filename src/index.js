@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './app';
+import '@fortawesome/fontawesome-free/js/all.js';
+import SimpleHabit from './components/simpleHabit';
+
 
 ReactDOM.render(
+  //여기서 root와 최상위 comp인 App을 연결해준다 root는 index.html
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
